@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mooi Café & Bar</title>
+<meta name="description" content="Mooi Café & Bar in Emden – Frühstück, Kaffee, Kuchen, Cocktails mit und ohne Alkohol, Bier und entspannte Atmosphäre.">
+<style>
+:root {
+  --brown:#744126; --brown2:#8a5332; --cream:#f7f3ee; --dark:#171719;
+  --muted:#6d625a; --white:#fff;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--dark);
+  background:var(--cream); line-height:1.55;
+}
+header {
+  position:sticky; top:0; z-index:10; background:rgba(23,23,25,.96);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav {
+  max-width:1100px; margin:auto; padding:14px 22px; display:flex;
+  align-items:center; justify-content:space-between; gap:20px;
+}
+.logo { color:white; font-size:25px; font-weight:800; letter-spacing:3px; }
+.logo span { color:#c99470; }
+nav a { color:#fff; text-decoration:none; margin-left:22px; font-size:14px; }
+nav a:hover { color:#d7aa8a; }
+.hero {
+  min-height:78vh; display:grid; place-items:center; text-align:center; padding:80px 22px;
+  background:
+    linear-gradient(rgba(20,15,12,.58),rgba(20,15,12,.72)),
+    radial-gradient(circle at center, #9a6545, #241814 70%);
+  color:white;
+}
+.hero-inner { max-width:800px; }
+.kicker { letter-spacing:5px; text-transform:uppercase; color:#e1b99e; font-size:13px; }
+h1 { font-size:clamp(48px,9vw,92px); margin:10px 0; letter-spacing:4px; }
+.hero p { font-size:clamp(18px,3vw,25px); margin:0 auto 30px; }
+.btn {
+  display:inline-block; background:var(--brown2); color:white; text-decoration:none;
+  padding:13px 24px; border-radius:4px; font-weight:700; margin:5px;
+}
+.btn.light { background:transparent; border:1px solid rgba(255,255,255,.55); }
+section { max-width:1100px; margin:auto; padding:75px 22px; }
+.section-title { text-align:center; margin-bottom:38px; }
+.section-title .eyebrow { color:var(--brown); font-weight:800; letter-spacing:3px; text-transform:uppercase; font-size:12px; }
+.section-title h2 { font-size:40px; margin:8px 0 10px; }
+.section-title p { color:var(--muted); margin:0 auto; max-width:650px; }
+.about { display:grid; grid-template-columns:1fr 1fr; gap:45px; align-items:center; }
+.about-box { background:white; padding:36px; border-radius:14px; box-shadow:0 12px 40px rgba(40,25,15,.08); }
+.about h3 { color:var(--brown); font-size:28px; margin-top:0; }
+.menu-wrap { background:white; padding:18px; border-radius:16px; box-shadow:0 12px 40px rgba(40,25,15,.08); }
+.menu-wrap img { display:block; width:100%; height:auto; border-radius:10px; }
+.contact { background:var(--dark); color:white; max-width:none; }
+.contact-inner { max-width:1100px; margin:auto; padding:75px 22px; text-align:center; }
+.contact-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:35px; }
+.contact-card { background:#232326; padding:24px; border-radius:12px; }
+.contact-card strong { display:block; color:#d8a887; margin-bottom:8px; }
+footer { background:#101012; color:#aaa; text-align:center; padding:24px; font-size:13px; }
+@media (max-width:760px) {
+  nav a { margin-left:9px; font-size:12px; }
+  .about { grid-template-columns:1fr; }
+  .contact-grid { grid-template-columns:1fr; }
+  .section-title h2 { font-size:32px; }
+}
+
+.menu-grid{max-width:1050px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.mc{background:#fff;border-radius:14px;padding:24px;box-shadow:0 10px 30px rgba(40,25,15,.07);scroll-margin-top:90px}.mc h3{margin:0 0 14px;color:#744126;font-size:24px;border-bottom:1px solid #eadfd7;padding-bottom:10px}.mi{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid #f0ebe7}.mi:last-child{border-bottom:0}.mi b{display:block}.mi small{display:block;color:#786b62;margin-top:3px;line-height:1.4}.mi>strong{white-space:nowrap;color:#744126}.menu-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 auto 24px;max-width:1000px}.menu-nav a{background:#fff;color:#744126;text-decoration:none;border:1px solid #e4d8ce;padding:9px 13px;border-radius:999px;font-weight:700;font-size:13px}.menu-nav a:hover{background:#744126;color:#fff}.menu-grid+.menu-note{margin-top:24px}@media(max-width:760px){.menu-grid{grid-template-columns:1fr}.mc{padding:19px}.mi{font-size:14px}.menu-nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.menu-nav a{flex:0 0 auto}}
+</style>
+
+<style>
+.menu-note{max-width:900px;margin:0 auto 24px;padding:14px 18px;background:#f0e6dd;border-left:4px solid #744126;color:#5e5047;border-radius:6px}.menu-pages{max-width:900px;margin:0 auto;display:grid;gap:24px}.menu-pages img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 10px 35px rgba(40,25,15,.12);background:#fff}@media(max-width:760px){.menu-pages{gap:14px}.menu-note{font-size:14px}}
+</style>
+<style>
+:root{--brown:#7a4930;--brown2:#a66b47;--cream:#f5efe8;--dark:#171416;--gold:#d5a77f;--line:#eadbce}
+body{font-family:Georgia,'Times New Roman',serif;background:linear-gradient(180deg,#f8f3ee 0%,#f2e9e0 100%);}
+header{background:rgba(19,15,14,.88);backdrop-filter:blur(14px);box-shadow:0 8px 30px rgba(0,0,0,.14)}
+.nav{max-width:1180px;padding:16px 22px}.logo{font-family:Arial,sans-serif;font-size:26px;letter-spacing:5px}.logo span{color:var(--gold)}
+nav a{font-family:Arial,sans-serif;font-weight:600;letter-spacing:.3px}
+.hero{min-height:86vh;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,rgba(174,113,75,.45),transparent 30%),radial-gradient(circle at 15% 85%,rgba(119,68,43,.35),transparent 28%),linear-gradient(135deg,#211815 0%,#3a241b 48%,#171314 100%);}
+.hero:before{content:'';position:absolute;inset:22px;border:1px solid rgba(221,178,145,.22);border-radius:26px;pointer-events:none}
+.hero-inner{position:relative;z-index:1;padding:50px 25px;max-width:900px}
+.kicker{font-family:Arial,sans-serif;font-size:12px;letter-spacing:7px;color:#e8c9b2}
+h1{font-family:Arial,sans-serif;font-weight:800;letter-spacing:10px;text-shadow:0 8px 35px rgba(0,0,0,.35)}
+.hero p{font-size:clamp(19px,3vw,27px);color:#f4e8de;letter-spacing:1px}.hero .subline{font-family:Arial,sans-serif;font-size:15px;max-width:650px;color:#d9c9bd;margin:0 auto 26px}
+.btn{font-family:Arial,sans-serif;border-radius:999px;padding:14px 25px;background:linear-gradient(135deg,#b97850,#8a4f31);box-shadow:0 8px 22px rgba(0,0,0,.2);transition:.25s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.28)}.btn.light{border-color:rgba(255,255,255,.45);background:rgba(255,255,255,.05)}
+section{max-width:1180px;padding:88px 22px}.section-title .eyebrow{font-family:Arial,sans-serif;color:var(--brown);letter-spacing:4px}.section-title h2{font-size:clamp(34px,5vw,48px);font-weight:500}.section-title p{font-family:Arial,sans-serif}
+.about{gap:55px}.about>div:first-child{padding:15px}.about p{font-family:Arial,sans-serif;color:#5f544d}.about-box{position:relative;border:1px solid var(--line);border-radius:22px;padding:42px;background:linear-gradient(145deg,#fff,#f7eee6);box-shadow:0 20px 55px rgba(63,39,25,.10)}.about-box:after{content:'MOOI';position:absolute;right:22px;top:16px;font-family:Arial,sans-serif;font-weight:800;letter-spacing:4px;color:rgba(122,73,48,.08);font-size:46px}.about h3{font-weight:500}
+.contact-grid{gap:20px}.contact-card{border:1px solid rgba(255,255,255,.08);border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.14)}
+.menu-wrap,.mc{border:1px solid var(--line);box-shadow:0 15px 40px rgba(53,31,19,.08);border-radius:20px}.mc{transition:transform .2s,box-shadow .2s}.mc:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(53,31,19,.12)}.mc h3{font-weight:500}.menu-nav a{font-family:Arial,sans-serif;box-shadow:0 4px 12px rgba(80,50,35,.05);transition:.2s}.menu-nav a:hover{transform:translateY(-1px)}
+#speisekarte{background:rgba(255,255,255,.28)}
+@media(max-width:760px){.hero{min-height:82vh}.hero:before{inset:12px;border-radius:18px}nav a{font-size:11px;margin-left:6px}.nav{padding:13px 14px}.logo{font-size:22px;letter-spacing:4px}.about-box{padding:30px}.section-title{margin-bottom:30px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">M<span>O</span>OI</div>
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="start">
+  <div class="hero-inner">
+    <div class="kicker">Café & Bar</div>
+    <h1>MOOI</h1>
+    <p>Good Food · Good Mood</p><div class="subline">Frühstück am Morgen · Kaffee & Kuchen am Nachmittag · Cocktails & Drinks am Abend</div>
+    <a class="btn" href="#speisekarte">Speisekarte entdecken</a>
+    <a class="btn light" href="#kontakt">Kontakt</a>
+  </div>
+</section>
+
+<section id="ueber-uns">
+  <div class="about">
+    <div>
+      <div class="section-title" style="text-align:left;margin-bottom:20px">
+        <div class="eyebrow">Willkommen bei Mooi</div>
+        <h2>Café & Bar mit guter Stimmung.</h2>
+      </div>
+      <p>Frühstück genießen, guten Kaffee trinken, Kuchen teilen oder den Abend bei einem Cocktail ausklingen lassen – willkommen bei Mooi Café & Bar.</p>
+      <p>Unsere Frühstücksauswahl reicht vom kleinen Frühstück bis zum großen Mooi Frühstück und einer vegetarischen Variante.</p>
+    </div>
+    <div class="about-box">
+      <h3>Frühstück · Kaffee · Cocktails</h3>
+      <p>Ob gemütliches Frühstück, feiner Kaffee, ein Stück Kuchen oder ein Cocktail mit oder ohne Alkohol – bei MOOI findest du den passenden Moment.</p>
+      <a class="btn" href="#fruehstueck">Zur Frühstückskarte</a>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Unser Angebot" style="padding-bottom:20px">
+  <div class="section-title">
+    <div class="eyebrow">Bei MOOI</div>
+    <h2>Mehr als nur Frühstück</h2>
+    <p>Ob morgens, nachmittags oder abends – bei MOOI kannst du gemütlich sitzen, genießen und abschalten.</p>
+  </div>
+  <div class="contact-grid" style="grid-template-columns:repeat(4,1fr)">
+    <div class="contact-card" style="background:white;color:#171719"><strong>🍳 Frühstück</strong><span>Entspannt in den Tag starten.</span></div>
+    <div class="contact-card" style="background:white;color:#171719"><strong>☕ Kaffee & Kuchen</strong><span>Gemütlich sitzen und genießen.</span></div>
+    <div class="contact-card" style="background:white;color:#171719"><strong>🍹 Cocktails</strong><span>Mit und ohne Alkohol.</span></div>
+    <div class="contact-card" style="background:white;color:#171719"><strong>🌙 Abendstimmung</strong><span>Drinks, Bier und entspannte Atmosphäre.</span></div>
+  </div>
+</section>
+
+<section id="speisekarte"><div class="section-title"><div class="eyebrow">Mooi Café &amp; Bar</div><h2>Unsere Speisekarte</h2><p>Alle Speisen und Getränke übersichtlich nach Kategorien.</p></div><div class="menu-nav"><a href="#fruehstueck">Frühstück</a><a href="#kuchen">Kuchen & Torte</a><a href="#broetchen">Belegte Brötchen</a><a href="#kaffee">Kaffee</a><a href="#tee">Tee</a><a href="#cocktails">Cocktails</a><a href="#alkoholfrei">Alkoholfrei</a><a href="#aperitifs">Aperitifs</a><a href="#softdrinks">Softdrinks</a><a href="#bier">Bier</a></div><div class="menu-grid"><div class="mc" id="fruehstueck"><h3>Frühstück</h3><div class="mi"><div><b>Mooi Frühstück</b><small>2 Brötchen oder 1 Brötchen + 1 Scheibe Schwarzbrot · 2 Scheiben Käse · 2 Scheiben Wurstaufschnitt · Butter · Konfitüre · Honig · 1 gekochtes Ei</small></div><strong>12,90 €</strong></div><div class="mi"><div><b>Französisches Frühstück</b><small>1 Croissant · Butter · Konfitüre · Nutella · Honig</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Süß Frühstück</b><small>Süßes Frühstück</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Kleines Frühstück</b><small>1 Brötchen oder 1 Scheibe Schwarzbrot · Käse · Wurstaufschnitt · Butter · Konfitüre · 1 gekochtes Ei</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Vegetarisches Frühstück</b><small>2 Brötchen oder 1 Brötchen + 1 Scheibe Schwarzbrot · Käse · Frischkäse · Konfitüre · Butter · Honig · 1 gekochtes Ei · Gurke & Tomate</small></div><strong>11,90 €</strong></div><div class="mi"><div><b>Croissant</b></div><strong>+3,00 €</strong></div><div class="mi"><div><b>Gekochtes Ei</b></div><strong>+1,50 €</strong></div><div class="mi"><div><b>Rührei</b></div><strong>+3,50 €</strong></div><div class="mi"><div><b>Rührei mit Bacon</b></div><strong>+4,50 €</strong></div><div class="mi"><div><b>Brötchen</b></div><strong>1,20 €</strong></div><div class="mi"><div><b>Scheibe Schwarzbrot</b></div><strong>+1,00 €</strong></div><div class="mi"><div><b>Butter</b></div><strong>+1,00 €</strong></div></div><div class="mc" id="kuchen"><h3>Kuchen & Torte</h3><div class="mi"><div><b>Sahnetorte</b><small>Tagesangebot · selbst gebacken</small></div><strong>4,00 €</strong></div><div class="mi"><div><b>Käsekuchen</b></div><strong>4,50 €</strong></div><div class="mi"><div><b>Crumble-Kuchen</b></div><strong>4,60 €</strong></div><div class="mi"><div><b>Crumble-Kuchen mit Sahne & Eis</b></div><strong>6,80 €</strong></div><div class="mi"><div><b>1 Kugel Eis</b></div><strong>1,00 €</strong></div><div class="mi"><div><b>Portion Sahne</b></div><strong>0,80 €</strong></div></div><div class="mc" id="broetchen"><h3>Belegte Brötchen</h3><div class="mi"><div><b>Käse</b><small>Halbes Brötchen</small></div><strong>4,20 €</strong></div><div class="mi"><div><b>Salami</b><small>Halbes Brötchen</small></div><strong>4,20 €</strong></div><div class="mi"><div><b>Lachsschinken</b><small>Halbes Brötchen</small></div><strong>4,50 €</strong></div><div class="mi"><div><b>Kochschinken</b><small>Halbes Brötchen</small></div><strong>4,80 €</strong></div><div class="mi"><div><b>Gekochtes Ei</b><small>Belegt mit</small></div><strong>4,80 €</strong></div><div class="mi"><div><b>Aufschnitt / Käse</b></div><strong>5,50 €</strong></div><div class="mi"><div><b>Camembert</b></div><strong>2,60 €</strong></div><div class="mi"><div><b>Rührei</b></div><strong>2,60 €</strong></div><div class="mi"><div><b>Spiegelei</b></div><strong>2,80 €</strong></div><div class="mi"><div><b>Schinken & Spiegelei</b></div><strong>2,60 €</strong></div></div><div class="mc" id="kaffee"><h3>Kaffeespezialitäten</h3><div class="mi"><div><b>Filterkaffee</b></div><strong>2,80 €</strong></div><div class="mi"><div><b>Kaffee Crema</b></div><strong>3,80 €</strong></div><div class="mi"><div><b>Espresso</b></div><strong>3,90 €</strong></div><div class="mi"><div><b>Doppelter Espresso</b></div><strong>4,50 €</strong></div><div class="mi"><div><b>Espresso Macchiato</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Cappuccino</b></div><strong>3,30 €</strong></div><div class="mi"><div><b>Latte Macchiato</b></div><strong>3,50 €</strong></div><div class="mi"><div><b>Café au Lait</b></div><strong>4,90 €</strong></div><div class="mi"><div><b>Heiße Schokolade</b></div><strong>4,30 €</strong></div><div class="mi"><div><b>Weiße Schokolade</b></div><strong>4,50 €</strong></div></div><div class="mc" id="tee"><h3>Tee</h3><div class="mi"><div><b>Glas Ostfriesentee – Thiele Tee</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Kännchen Ostfriesentee mit Stövke – Thiele Tee</b></div><strong>4,80 €</strong></div><div class="mi"><div><b>Kanne Ostfriesentee mit Stövke – Thiele Tee</b></div><strong>8,90 €</strong></div><div class="mi"><div><b>Glas Minztee Bio</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Kamillentee Bio</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Grüner Tee Bio</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Früchtetee</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Rooibos Sahne Caramel</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Kräutertee Bio</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Fencheltee Bio</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Glas Earl Grey</b></div><strong>2,90 €</strong></div><div class="mi"><div><b>Kännchen Tee (o. g. Sorten)</b></div><strong>4,80 €</strong></div></div><div class="mc" id="cocktails"><h3>Cocktails</h3><div class="mi"><div><b>Tequila Sunrise</b><small>Tequila, Orange, Grenadine</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Sex on the Beach</b><small>Vodka, Pfirsich, Orange, Maracuja</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Pina Colada</b><small>Rum, Ananas, Cocos, Sahne</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Mai Tai</b><small>Rum, Lime, Mandel, Ananas, Maracuja</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Mojito</b><small>Havana, Minze, Lime, Rohrzucker</small></div><strong>8,50 €</strong></div><div class="mi"><div><b>Solero</b><small>Maracuja, Orange, Vanille, Sahne</small></div><strong>8,50 €</strong></div></div><div class="mc" id="alkoholfrei"><h3>Alkoholfreie Cocktails</h3><div class="mi"><div><b>San Francisco</b><small>Orange, Ananas, Lemon, Grenadin</small></div><strong>6,50 €</strong></div><div class="mi"><div><b>Virgin Colada</b><small>Ananas, Cocos, Sahne</small></div><strong>6,50 €</strong></div><div class="mi"><div><b>Virgin Tai</b><small>Mandel, Maracuja, Lime</small></div><strong>6,50 €</strong></div><div class="mi"><div><b>Virgin Mojito</b><small>Lime, Minze, Rohrzucker, Sodawater</small></div><strong>6,50 €</strong></div><div class="mi"><div><b>Fleur Parisienne</b><small>Maracuja, Orange, Erdbeeren</small></div><strong>6,50 €</strong></div></div><div class="mc" id="aperitifs"><h3>Aperitifs & Spirituosen</h3><div class="mi"><div><b>Aperol Spritz</b><small>Sekt, Aperol, Sprudelwasser</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Hugo</b><small>Sekt, Minze, Holundersirup</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Lillet Wildberry</b><small>Lillet + Wildberry</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Limoncello</b><small>Limoncello, Sekt, Sprudelwasser</small></div><strong>6,90 €</strong></div><div class="mi"><div><b>Tequila 0,2 cl</b></div><strong>2,80 €</strong></div><div class="mi"><div><b>Jägermeister 0,2 cl</b></div><strong>2,80 €</strong></div><div class="mi"><div><b>Ouzo 0,2 cl</b></div><strong>2,80 €</strong></div><div class="mi"><div><b>Sambuca 0,2 cl</b></div><strong>2,70 €</strong></div><div class="mi"><div><b>Baileys auf Eis 0,4 cl</b></div><strong>4,60 €</strong></div><div class="mi"><div><b>Jim Beam 0,2 cl</b></div><strong>3,00 €</strong></div><div class="mi"><div><b>Jack Daniel 0,2 cl</b></div><strong>3,30 €</strong></div><div class="mi"><div><b>Bombay 0,2 cl</b></div><strong>3,30 €</strong></div><div class="mi"><div><b>Vodka 0,2 cl</b></div><strong>3,30 €</strong></div></div><div class="mc" id="softdrinks"><h3>Softdrinks</h3><div class="mi"><div><b>Coca Cola 0,33 l</b></div><strong>3,90 €</strong></div><div class="mi"><div><b>Coca Cola Zero 0,33 l</b></div><strong>3,90 €</strong></div><div class="mi"><div><b>Fanta / Sprite / Mezzo Mix 0,33 l</b></div><strong>3,90 €</strong></div><div class="mi"><div><b>Vio – still / medium 0,25 l</b></div><strong>3,20 €</strong></div><div class="mi"><div><b>Vio – still / medium 0,75 l</b></div><strong>6,90 €</strong></div><div class="mi"><div><b>Ginger Ale / Bitter Lemon / Tonic Water</b></div><strong>3,20 €</strong></div><div class="mi"><div><b>Auricher Säfte 0,25 l</b><small>Orange, Ananas, Apfel, Maracuja</small></div><strong>3,10 €</strong></div><div class="mi"><div><b>Auricher Säfte 0,4 l</b><small>Orange, Ananas, Apfel, Maracuja</small></div><strong>5,70 €</strong></div><div class="mi"><div><b>Auricher Schorle 0,25 l</b><small>Orange, Ananas, Apfel, Maracuja</small></div><strong>3,00 €</strong></div><div class="mi"><div><b>Auricher Schorle 0,4 l</b><small>Orange, Ananas, Apfel, Maracuja</small></div><strong>5,40 €</strong></div></div><div class="mc" id="bier"><h3>Bier</h3><div class="mi"><div><b>Krombacher Pils 0,3 l</b></div><strong>3,60 €</strong></div><div class="mi"><div><b>Krombacher Pils 0,5 l</b></div><strong>5,20 €</strong></div><div class="mi"><div><b>Jever Pils 0,3 l</b></div><strong>3,70 €</strong></div><div class="mi"><div><b>Jever Pils 0,5 l</b></div><strong>5,80 €</strong></div><div class="mi"><div><b>Krombacher Alster 0,3 l</b></div><strong>3,60 €</strong></div><div class="mi"><div><b>Krombacher Alster 0,5 l</b></div><strong>5,30 €</strong></div><div class="mi"><div><b>Krombacher alkoholfrei 0,3 l</b></div><strong>3,60 €</strong></div><div class="mi"><div><b>Krombacher Radler alkoholfrei 0,3 l</b></div><strong>3,60 €</strong></div><div class="mi"><div><b>Krombacher Weizen 0,5 l</b></div><strong>5,20 €</strong></div><div class="mi"><div><b>Krombacher Weizen alkoholfrei</b></div><strong>5,20 €</strong></div><div class="mi"><div><b>Köstritzer Schwarzbier 0,3 l</b></div><strong>5,20 €</strong></div></div></div><div class="menu-note">Getränke und Preise gemäß der von dir bereitgestellten Speisekarte.</div></section>
+
+<section class="contact" id="kontakt">
+  <div class="contact-inner">
+    <div class="section-title">
+      <div class="eyebrow">Wir freuen uns auf dich</div>
+      <h2>Kontakt</h2>
+      <p style="color:#c9c3be">Besuche uns in der Großen Straße 55 in Emden oder ruf uns direkt an.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card"><strong>Adresse</strong>Große Straße 55<br>26721 Emden</div>
+      <div class="contact-card"><strong>Öffnungszeiten</strong>Di. &amp; Do. 09:00–20:00 Uhr<br>Fr. &amp; Sa. 09:00–00:00 Uhr<br>So. 09:00–14:00 Uhr<br>Mo. geschlossen</div>
+      <div class="contact-card"><strong>Telefon</strong><a href="tel:+4949219079249" style="color:white;text-decoration:none">04921 9079249</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Mooi Café & Bar · Alle Rechte vorbehalten.</footer>
+</body>
+</html>
